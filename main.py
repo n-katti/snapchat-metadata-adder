@@ -1,4 +1,6 @@
 import logging
+import os
+from datetime import datetime
 from functools import partial
 from multiprocessing import cpu_count
 from sys import stderr
@@ -16,11 +18,28 @@ from SnapchatMemoriesCaptionAdder.parser import parse_history
 def main():
     args = parse_args()
 
+    # Create logs folder if not exists
+    log_dir = "logs"
+    os.makedirs(log_dir, exist_ok=True)
+
+    # Create unique log filename with timestamp
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_file = os.path.join(log_dir, f"snapchat_metadata_{timestamp}.log")
+
+    # Get the logger
+    snapLogger = logging.getLogger("__snap")
+
+    # File handler for centralized logging
+    file_handler = logging.FileHandler(log_file, mode="w")
+    file_handler.setFormatter(
+        logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+    )
+    snapLogger.addHandler(file_handler)
+
     match args.verbose:
         case VerboseLevel.NONE:
             logging.basicConfig(level=logging.WARNING)
         case VerboseLevel.PROGRAM:
-            snapLogger = logging.getLogger("__snap")
             out = logging.StreamHandler(stderr)
             out.setFormatter(logging.Formatter("%(levelname)s - %(message)s"))
             snapLogger.addHandler(out)
@@ -128,3 +147,21 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+import json
+from pathlib import Path
+
+# Path to your JSON file
+json_path = Path("input/memories_history.json")
+
+# Load the JSON
+with open(json_path, "r", encoding="utf-8") as f:
+    data = json.load(f)  # parses the one-line JSON
+
+# Optional: pretty-print it to the console
+# print(json.dumps(data, indent=4))
+
+# Optional: write a normalized version back to a file
+normalized_path = Path("input/memories_history_normalized.json")
+with open(normalized_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=4)

@@ -58,9 +58,8 @@ def ffmpeg_add_metadata(
     if overlay:
         overlay_img = ffmpeg.input(str(overlay))
         # Use scale2ref to scale the overlay to the video
-        scaled = overlay_img.filter("scale", "-1", "rh")
-        # Overlay the overlay onto the video!
-        overlay_video = vid.overlay(scaled, eof_action="repeat")
+        scaled = ffmpeg.filter_multi_output([overlay_img, vid], "scale2ref")
+        overlay_video = scaled[1].overlay(scaled[0])
         output_node = ffmpeg.output(
             overlay_video,  # video
             vid.audio,  # audio
@@ -69,7 +68,7 @@ def ffmpeg_add_metadata(
         )
         if allow_overwriting:
             output_node = output_node.overwrite_output()
-        logger.debug(f"Compiled ffmpeg command: {" ".join(output_node.compile())}")
+        logger.debug(f'Compiled ffmpeg command: {" ".join(output_node.compile())}')
         try:
             if run_async:
                 process = output_node.run_async(quiet=quiet)
@@ -86,6 +85,6 @@ def ffmpeg_add_metadata(
         output_node = vid.output(str(output), codec="copy", **metadata_dict)
         if allow_overwriting:
             output_node = output_node.overwrite_output()
-        logger.debug(f"Compiled ffmpeg command: {" ".join(output_node.compile())}")
+        logger.debug(f'Compiled ffmpeg command: {" ".join(output_node.compile())}')
         output_node.run(quiet=quiet)
         return None
