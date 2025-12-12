@@ -1,0 +1,154 @@
+2025-08-25 21:51:43,392 - DEBUG - Args(memories_history=WindowsPath('input/memories_history.json'), memories_folder=WindowsPath('input/memories'), output_folder=WindowsPath('output'), verbose=<VerboseLevel.PROGRAM: 2>, type_handled=<MediaToHandle.VIDEO: 3>, run_async=False)
+2025-08-25 21:51:43,442 - INFO - f5516851-6275-19c2-d592-f4e74e1992c1 has duplicates in memories_history.json but has same data, continuing...
+2025-08-25 21:51:43,516 - INFO - 16159DBA-16E1-41E1-99ED-D82EFB5E5BDD has duplicates in memories_history.json but has same data, continuing...
+2025-08-25 21:51:43,538 - INFO - D0B179FA-9065-4B38-B3D2-A0CB6FA146E1 has duplicates in memories_history.json but has same data, continuing...
+2025-08-25 21:51:43,563 - WARNING - base image input\memories\2018-08-26_FB13A84B-54FA-4337-8895-80EE324DB2E1-main.mp4 does not exist!
+2025-08-25 21:51:43,564 - WARNING - base image input\memories\2019-05-22_1219c4c1-7533-e6da-4209-97c9926ce776-main.mp4 does not exist!
+2025-08-25 21:51:43,565 - WARNING - base image input\memories\2018-03-23_29056426-67C3-4F0C-A961-7D7D8B72689B-main.mp4 does not exist!
+2025-08-25 21:51:43,566 - WARNING - base image input\memories\2019-09-08_9ebe158e-a476-6a78-2699-9726786bc171-main.mp4 does not exist!
+2025-08-25 21:51:43,566 - DEBUG - base image name found: input\memories\2018-12-22_57E987DA-856A-4173-8A3E-BA8A3DE75342-main.mp4
+2025-08-25 21:51:43,567 - DEBUG - Overlay: input\memories\2018-12-22_57E987DA-856A-4173-8A3E-BA8A3DE75342-overlay.png
+2025-08-25 21:51:43,567 - DEBUG - output file: output\2018-12-22_02_39_57E987DA-856A-4173-8A3E-BA8A3DE75342.mp4
+2025-08-25 21:51:43,575 - DEBUG - Compiled ffmpeg command: ffmpeg -i input\memories\2018-12-22_57E987DA-856A-4173-8A3E-BA8A3DE75342-overlay.png -i input\memories\2018-12-22_57E987DA-856A-4173-8A3E-BA8A3DE75342-main.mp4 -filter_complex [0][1]scale2ref[s0][s1];[s1][s0]overlay=eof_action=repeat[s2] -map [s2] -map 1:a -metadata:g:0 creation_time=2018-12-22T02:39:38-05:00 -metadata:g:1 location=+34.0536-84.1511/ -metadata:g:2 location-eng=+34.0536-84.1511/ output\2018-12-22_02_39_57E987DA-856A-4173-8A3E-BA8A3DE75342.mp4
+2025-08-25 21:51:49,236 - DEBUG - base image name found: input\memories\2019-12-16_6DA12928-89CF-49A8-B4A9-5B27EF358D8E-main.mp4
+2025-08-25 21:51:49,237 - DEBUG - Overlay: input\memories\2019-12-16_6DA12928-89CF-49A8-B4A9-5B27EF358D8E-overlay.png
+2025-08-25 21:51:49,239 - DEBUG - output file: output\2019-12-16_01_05_6DA12928-89CF-49A8-B4A9-5B27EF358D8E.mp4
+2025-08-25 21:51:49,240 - DEBUG - Compiled ffmpeg command: ffmpeg -i input\memories\2019-12-16_6DA12928-89CF-49A8-B4A9-5B27EF358D8E-overlay.png -i input\memories\2019-12-16_6DA12928-89CF-49A8-B4A9-5B27EF358D8E-main.mp4 -filter_complex [0][1]scale2ref[s0][s1];[s1][s0]overlay=eof_action=repeat[s2] -map [s2] -map 1:a -metadata:g:0 creation_time=2019-12-16T01:05:52-05:00 -metadata:g:1 location=+34.0402-84.1724/ -metadata:g:2 location-eng=+34.0402-84.1724/ output\2019-12-16_01_05_6DA12928-89CF-49A8-B4A9-5B27EF358D8E.mp4
+2025-08-25 21:51:53,967 - WARNING - base image input\memories\2018-03-26_E6613947-045A-4803-A6C9-D2194251521D-main.mp4 does not exist!
+2025-08-25 21:51:53,967 - WARNING - base image input\memories\2021-08-15_B5FE64B4-5D3B-41C4-8784-8D958F75D557-main.mp4 does not exist!
+2025-08-25 21:51:53,968 - WARNING - base image input\memories\2020-02-27_C4C7D3F9-474B-41FF-9AD1-63364949AAC9-main.mp4 does not exist!
+2025-08-25 21:51:53,968 - WARNING - base image input\memories\2020-02-28_B1E0CAB2-E3CF-4E96-B38A-C8CF48759CD6-main.mp4 does not exist!
+2025-08-25 21:51:53,969 - WARNING - base image input\memories\2019-09-08_0a5c2f14-66c6-ddb5-128e-97079b53618f-main.mp4 does not exist!
+2025-08-25 21:51:53,969 - WARNING - base image input\memories\2018-11-22_E6D45966-9A08-469E-B059-411B3FB8601B-main.mp4 does not exist!
+2025-08-25 21:51:53,970 - WARNING - base image input\memories\2016-12-29_4B933FFE-B809-4193-BB50-B94D37742665-main.mp4 does not exist!
+2025-08-25 21:51:53,970 - WARNING - base image input\memories\2018-12-22_E453BC1D-7428-4DE1-96D4-0A6089F2B948-main.mp4 does not exist!
+2025-08-25 21:51:53,971 - WARNING - base image input\memories\2020-02-18_2E5615FE-6A82-4050-B74B-0EA7B535B13F-main.mp4 does not exist!
+2025-08-25 21:51:53,972 - WARNING - base image input\memories\2017-11-22_4D1C7D3F-75ED-482B-8A7B-7700A02DE3FF-main.mp4 does not exist!
+2025-08-25 21:51:53,973 - WARNING - base image input\memories\2020-03-03_E91F0BB4-75FC-4EFF-A244-AF91B2E907EB-main.mp4 does not exist!
+2025-08-25 21:51:53,974 - WARNING - base image input\memories\2019-03-15_2AEFFD7C-613A-4633-B847-6D6BD90280DF-main.mp4 does not exist!
+2025-08-25 21:51:53,975 - WARNING - base image input\memories\2016-12-31_62ADB1F7-0267-4E9E-8DA2-F4FB5926AE9B-main.mp4 does not exist!
+2025-08-25 21:51:53,975 - WARNING - base image input\memories\2017-10-21_E224B5BF-0329-4F3C-8E92-6C869BD3547B-main.mp4 does not exist!
+2025-08-25 21:51:53,975 - WARNING - base image input\memories\2021-11-09_AFFA280D-82AE-4260-8C38-B7238DB37657-main.mp4 does not exist!
+2025-08-25 21:51:53,976 - WARNING - base image input\memories\2019-11-02_8786280E-7A33-49CB-8A54-1E419AE7099B-main.mp4 does not exist!
+2025-08-25 21:51:53,977 - WARNING - base image input\memories\2018-07-22_EE21C9B2-7A4F-471D-AE4D-31EE12378399-main.mp4 does not exist!
+2025-08-25 21:51:53,977 - WARNING - base image input\memories\2018-10-14_89431DC2-C4F2-45BE-8DFE-924CCF0BBF83-main.mp4 does not exist!
+2025-08-25 21:51:53,978 - WARNING - base image input\memories\2019-09-21_cb35548c-505f-67ff-3714-18283bd089e6-main.mp4 does not exist!
+2025-08-25 21:51:53,978 - WARNING - base image input\memories\2017-10-08_19BF3FD5-BDF2-4ED0-94D0-7442481FFC6A-main.mp4 does not exist!
+2025-08-25 21:51:53,978 - WARNING - base image input\memories\2020-06-10_551C417A-6BA9-4D2D-BB82-BFBC28E9830F-main.mp4 does not exist!
+2025-08-25 21:51:53,980 - WARNING - base image input\memories\2017-11-25_0169FE9C-C415-46D8-9A86-D1B9E3FEF96E-main.mp4 does not exist!
+2025-08-25 21:51:53,981 - WARNING - base image input\memories\2018-12-22_01BE07C5-0E77-4A9F-8740-55D341BADDBD-main.mp4 does not exist!
+2025-08-25 21:51:53,981 - WARNING - base image input\memories\2019-06-21_02e3d9d4-eeac-a606-ea9d-b6b03fff37f2-main.mp4 does not exist!
+2025-08-25 21:51:53,982 - WARNING - base image input\memories\2018-10-09_17CDEFAE-22CB-46C0-93C1-C647F2BFC41D-main.mp4 does not exist!
+2025-08-25 21:51:53,982 - WARNING - base image input\memories\2017-11-23_0E13E757-39EC-41B9-B068-730A91CA286C-main.mp4 does not exist!
+2025-08-25 21:51:53,983 - DEBUG - base image name found: input\memories\2021-03-14_B608B72F-21D1-40FA-9BC2-83D0602078D3-main.mp4
+2025-08-25 21:51:53,983 - DEBUG - Overlay: input\memories\2021-03-14_B608B72F-21D1-40FA-9BC2-83D0602078D3-overlay.png
+2025-08-25 21:51:53,983 - DEBUG - output file: output\2021-03-14_17_52_B608B72F-21D1-40FA-9BC2-83D0602078D3.mp4
+2025-08-25 21:51:53,986 - DEBUG - Compiled ffmpeg command: ffmpeg -i input\memories\2021-03-14_B608B72F-21D1-40FA-9BC2-83D0602078D3-overlay.png -i input\memories\2021-03-14_B608B72F-21D1-40FA-9BC2-83D0602078D3-main.mp4 -filter_complex [0][1]scale2ref[s0][s1];[s1][s0]overlay=eof_action=repeat[s2] -map [s2] -map 1:a -metadata:g:0 creation_time=2021-03-14T17:52:14-04:00 -metadata:g:1 location=+33.7858-84.3875/ -metadata:g:2 location-eng=+33.7858-84.3875/ output\2021-03-14_17_52_B608B72F-21D1-40FA-9BC2-83D0602078D3.mp4
+2025-08-25 21:51:57,447 - WARNING - base image input\memories\2017-08-17_F2E5A616-823B-4E92-AA79-B3C5B03C7F6E-main.mp4 does not exist!
+2025-08-25 21:51:57,447 - WARNING - base image input\memories\2020-03-03_2A6DB89C-81A5-4FE9-B288-B66DFD474CC9-main.mp4 does not exist!
+2025-08-25 21:51:57,448 - DEBUG - base image name found: input\memories\2020-02-27_EBB181CB-F5EE-4428-8361-6C8DA5530540-main.mp4
+2025-08-25 21:51:57,448 - DEBUG - Overlay: input\memories\2020-02-27_EBB181CB-F5EE-4428-8361-6C8DA5530540-overlay.png
+2025-08-25 21:51:57,449 - DEBUG - output file: output\2020-02-26_20_47_EBB181CB-F5EE-4428-8361-6C8DA5530540.mp4
+2025-08-25 21:51:57,450 - DEBUG - Compiled ffmpeg command: ffmpeg -i input\memories\2020-02-27_EBB181CB-F5EE-4428-8361-6C8DA5530540-overlay.png -i input\memories\2020-02-27_EBB181CB-F5EE-4428-8361-6C8DA5530540-main.mp4 -filter_complex [0][1]scale2ref[s0][s1];[s1][s0]overlay=eof_action=repeat[s2] -map [s2] -map 1:a -metadata:g:0 creation_time=2020-02-26T20:47:59-05:00 -metadata:g:1 location=+33.9724-83.3734/ -metadata:g:2 location-eng=+33.9724-83.3734/ output\2020-02-26_20_47_EBB181CB-F5EE-4428-8361-6C8DA5530540.mp4
+2025-08-25 21:52:00,318 - WARNING - base image input\memories\2020-11-02_FC9F603F-2A3B-4488-A0C5-F0CEAC94CF06-main.mp4 does not exist!
+2025-08-25 21:52:00,319 - WARNING - base image input\memories\2018-12-22_F16BA405-1176-47BD-A1E2-FE7AB6A63508-main.mp4 does not exist!
+2025-08-25 21:52:00,319 - WARNING - base image input\memories\2020-01-30_5EA6A7E8-0416-4664-A805-3612B7EF1FAB-main.mp4 does not exist!
+2025-08-25 21:52:00,320 - WARNING - base image input\memories\2019-09-15_cbb1f37f-1175-2480-1cd0-5919be3d8332-main.mp4 does not exist!
+2025-08-25 21:52:00,320 - WARNING - base image input\memories\2019-04-01_9E0DC9DC-7BD3-471E-8AD9-A9530E2C6BFD-main.mp4 does not exist!
+2025-08-25 21:52:00,321 - WARNING - base image input\memories\2018-02-11_5CFD9C1B-227F-4F46-A334-DA485F2CF560-main.mp4 does not exist!
+2025-08-25 21:52:00,321 - WARNING - base image input\memories\2020-07-14_4C358029-E552-480D-BC33-BB08F8B0896D-main.mp4 does not exist!
+2025-08-25 21:52:00,322 - WARNING - base image input\memories\2017-08-19_F1E6A4C6-DFF8-4A3A-A2EF-86434493517F-main.mp4 does not exist!
+2025-08-25 21:52:00,322 - WARNING - base image input\memories\2019-02-19_21594C85-96A8-4189-A01F-9851BDB6CED6-main.mp4 does not exist!
+2025-08-25 21:52:00,323 - WARNING - base image input\memories\2023-07-01_D940AD5D-7318-4889-819B-35DF4266EA2C-main.mp4 does not exist!
+2025-08-25 21:52:00,323 - DEBUG - base image name found: input\memories\2021-02-28_D9976C76-85CA-487D-B88B-B54088F9387C-main.mp4
+2025-08-25 21:52:00,323 - DEBUG - Overlay: input\memories\2021-02-28_D9976C76-85CA-487D-B88B-B54088F9387C-overlay.png
+2025-08-25 21:52:00,324 - DEBUG - output file: output\2021-02-28_05_39_D9976C76-85CA-487D-B88B-B54088F9387C.mp4
+2025-08-25 21:52:00,325 - DEBUG - Compiled ffmpeg command: ffmpeg -i input\memories\2021-02-28_D9976C76-85CA-487D-B88B-B54088F9387C-overlay.png -i input\memories\2021-02-28_D9976C76-85CA-487D-B88B-B54088F9387C-main.mp4 -filter_complex [0][1]scale2ref[s0][s1];[s1][s0]overlay=eof_action=repeat[s2] -map [s2] -map 1:a -metadata:g:0 creation_time=2021-02-28T05:39:07-05:00 -metadata:g:1 location=+33.7859-84.3876/ -metadata:g:2 location-eng=+33.7859-84.3876/ output\2021-02-28_05_39_D9976C76-85CA-487D-B88B-B54088F9387C.mp4
+2025-08-25 21:52:03,007 - WARNING - base image input\memories\2020-08-10_081B4B4A-F262-4A8F-B4BF-DB0F925BDF09-main.mp4 does not exist!
+2025-08-25 21:52:03,008 - WARNING - base image input\memories\2018-11-22_C9F280A4-3692-45CA-B792-D8F3801504CC-main.mp4 does not exist!
+2025-08-25 21:52:03,009 - WARNING - base image input\memories\2017-01-14_AB3B40AA-656B-4CAC-A276-886E8720ACC9-main.mp4 does not exist!
+2025-08-25 21:52:03,009 - WARNING - base image input\memories\2019-05-22_ab7c987d-7e76-f727-df5d-c411ff6c7424-main.mp4 does not exist!
+2025-08-25 21:52:03,010 - WARNING - base image input\memories\2021-09-28_55B908E7-D7AE-412C-BCE0-14C8368A99B1-main.mp4 does not exist!
+2025-08-25 21:52:03,010 - WARNING - base image input\memories\2018-06-09_DF53CD41-9740-4EFF-AC79-38EEF9EED974-main.mp4 does not exist!
+2025-08-25 21:52:03,011 - WARNING - base image input\memories\2016-10-01_61907233-8225-4A39-8E7D-8C6ED2917E20-main.mp4 does not exist!
+2025-08-25 21:52:03,011 - WARNING - base image input\memories\2020-07-12_3CB8E698-BF5D-4B7F-80E5-1919395F9D17-main.mp4 does not exist!
+2025-08-25 21:52:03,012 - WARNING - base image input\memories\2020-08-10_9CF341B6-2837-4EAD-B299-B72B7DEC8962-main.mp4 does not exist!
+2025-08-25 21:52:03,012 - WARNING - base image input\memories\2017-03-06_139E6ECA-A16A-4B18-87A2-930CA07C52BC-main.mp4 does not exist!
+2025-08-25 21:52:03,012 - WARNING - base image input\memories\2019-01-29_994A6156-6163-454C-BD75-00C597C548B1-main.mp4 does not exist!
+2025-08-25 21:52:03,013 - WARNING - base image input\memories\2018-12-07_C24B672A-1541-41E5-93EB-8265948EE7D2-main.mp4 does not exist!
+2025-08-25 21:52:03,014 - WARNING - base image input\memories\2018-08-28_865FFB3F-B6DE-4F29-8842-CAE78794C47D-main.mp4 does not exist!
+2025-08-25 21:52:03,014 - WARNING - base image input\memories\2020-02-01_D4A00EB0-1FB0-42E0-8F9A-E4560FC839BD-main.mp4 does not exist!
+2025-08-25 21:52:03,015 - WARNING - base image input\memories\2020-03-13_A1CAD363-A9D0-4C81-A898-C9CCCE5021DF-main.mp4 does not exist!
+2025-08-25 21:52:03,015 - DEBUG - base image name found: input\memories\2019-01-20_AD7F093F-5E6A-4C57-98AA-4D6AEC259F72-main.mp4
+2025-08-25 21:52:03,016 - DEBUG - Overlay: input\memories\2019-01-20_AD7F093F-5E6A-4C57-98AA-4D6AEC259F72-overlay.png
+2025-08-25 21:52:03,016 - DEBUG - output file: output\2019-01-19_23_34_AD7F093F-5E6A-4C57-98AA-4D6AEC259F72.mp4
+2025-08-25 21:52:03,017 - DEBUG - Compiled ffmpeg command: ffmpeg -i input\memories\2019-01-20_AD7F093F-5E6A-4C57-98AA-4D6AEC259F72-overlay.png -i input\memories\2019-01-20_AD7F093F-5E6A-4C57-98AA-4D6AEC259F72-main.mp4 -filter_complex [0][1]scale2ref[s0][s1];[s1][s0]overlay=eof_action=repeat[s2] -map [s2] -map 1:a -metadata:g:0 creation_time=2019-01-19T23:34:41-05:00 -metadata:g:1 location=+33.9588-83.3772/ -metadata:g:2 location-eng=+33.9588-83.3772/ output\2019-01-19_23_34_AD7F093F-5E6A-4C57-98AA-4D6AEC259F72.mp4
+2025-08-25 21:52:06,839 - WARNING - base image input\memories\2017-02-13_2248E191-7159-4460-B4A9-7D2558353B06-main.mp4 does not exist!
+2025-08-25 21:52:06,840 - WARNING - base image input\memories\2018-08-28_28DB6BB5-0C3D-4AD8-A1E5-EE8CE7DFE0DE-main.mp4 does not exist!
+2025-08-25 21:52:06,841 - WARNING - base image input\memories\2021-04-11_E32C8BE1-0BCE-4A9D-BEE2-94D89A2C80E2-main.mp4 does not exist!
+2025-08-25 21:52:06,842 - DEBUG - base image name found: input\memories\2019-12-14_C81FC5C8-7E60-4866-B73A-AE20BA81598A-main.mp4
+2025-08-25 21:52:06,842 - DEBUG - Overlay: input\memories\2019-12-14_C81FC5C8-7E60-4866-B73A-AE20BA81598A-overlay.png
+2025-08-25 21:52:06,843 - DEBUG - output file: output\2019-12-13_22_26_C81FC5C8-7E60-4866-B73A-AE20BA81598A.mp4
+2025-08-25 21:52:06,844 - DEBUG - Compiled ffmpeg command: ffmpeg -i input\memories\2019-12-14_C81FC5C8-7E60-4866-B73A-AE20BA81598A-overlay.png -i input\memories\2019-12-14_C81FC5C8-7E60-4866-B73A-AE20BA81598A-main.mp4 -filter_complex [0][1]scale2ref[s0][s1];[s1][s0]overlay=eof_action=repeat[s2] -map [s2] -map 1:a -metadata:g:0 creation_time=2019-12-13T22:26:11-05:00 -metadata:g:1 location=+33.9723-83.3734/ -metadata:g:2 location-eng=+33.9723-83.3734/ output\2019-12-13_22_26_C81FC5C8-7E60-4866-B73A-AE20BA81598A.mp4
+2025-08-25 21:52:12,014 - WARNING - base image input\memories\2019-05-22_ac39ad0f-d188-5630-9050-3ecfeadc925d-main.mp4 does not exist!
+2025-08-25 21:52:12,015 - WARNING - base image input\memories\2017-10-04_4C0B19DF-5735-47CD-A768-4A13BA1F9295-main.mp4 does not exist!
+2025-08-25 21:52:12,016 - WARNING - base image input\memories\2021-07-09_43BB4358-652C-4D3B-B7B3-C39560745D72-main.mp4 does not exist!
+2025-08-25 21:52:12,017 - WARNING - base image input\memories\2018-10-14_DC9927E9-8E9E-48DB-A938-000DB7131B58-main.mp4 does not exist!
+2025-08-25 21:52:12,018 - WARNING - base image input\memories\2021-03-09_975A3799-BE97-4872-BD5F-1957F4491131-main.mp4 does not exist!
+2025-08-25 21:52:12,020 - WARNING - base image input\memories\2019-04-20_572D482D-EB03-4186-9256-A8E44931D03B-main.mp4 does not exist!
+2025-08-25 21:52:12,022 - WARNING - base image input\memories\2021-08-15_C6FEDDF0-41A7-4944-B506-A5517D67E4A8-main.mp4 does not exist!
+2025-08-25 21:52:12,024 - WARNING - base image input\memories\2020-03-05_6F8ABAA1-11FB-42E0-B256-C47D5F9439B2-main.mp4 does not exist!
+2025-08-25 21:52:12,025 - WARNING - base image input\memories\2019-06-02_06d06a43-b1c1-ed0c-cc82-3fd939b44bc8-main.mp4 does not exist!
+2025-08-25 21:52:12,027 - WARNING - base image input\memories\2019-06-21_11ae1573-47b8-2cf8-9b32-9159f65d0d36-main.mp4 does not exist!
+2025-08-25 21:52:12,029 - WARNING - base image input\memories\2018-06-09_D76EE676-2D89-45E6-9C5B-6FA788B1B01D-main.mp4 does not exist!
+2025-08-25 21:52:12,030 - DEBUG - base image name found: input\memories\2019-11-02_BBC24EAB-D036-40A4-9251-2A1719893A83-main.mp4
+2025-08-25 21:52:12,031 - DEBUG - Overlay: input\memories\2019-11-02_BBC24EAB-D036-40A4-9251-2A1719893A83-overlay.png
+2025-08-25 21:52:12,032 - DEBUG - output file: output\2019-11-02_14_15_BBC24EAB-D036-40A4-9251-2A1719893A83.mp4
+2025-08-25 21:52:12,034 - DEBUG - Compiled ffmpeg command: ffmpeg -i input\memories\2019-11-02_BBC24EAB-D036-40A4-9251-2A1719893A83-overlay.png -i input\memories\2019-11-02_BBC24EAB-D036-40A4-9251-2A1719893A83-main.mp4 -filter_complex [0][1]scale2ref[s0][s1];[s1][s0]overlay=eof_action=repeat[s2] -map [s2] -map 1:a -metadata:g:0 creation_time=2019-11-02T14:15:13-04:00 -metadata:g:1 location=+30.3233-81.6315/ -metadata:g:2 location-eng=+30.3233-81.6315/ output\2019-11-02_14_15_BBC24EAB-D036-40A4-9251-2A1719893A83.mp4
+2025-08-25 21:52:16,437 - WARNING - base image input\memories\2018-05-02_B73C7D86-98CE-4072-81E2-919838948142-main.mp4 does not exist!
+2025-08-25 21:52:16,438 - WARNING - base image input\memories\2020-01-30_1B736A3B-68C8-4985-959C-18EB881C6104-main.mp4 does not exist!
+2025-08-25 21:52:16,439 - WARNING - base image input\memories\2019-05-02_084580d2-f069-be13-d982-2b4fe5d8bab3-main.mp4 does not exist!
+2025-08-25 21:52:16,439 - WARNING - base image input\memories\2021-04-11_AC287349-568A-4780-BBC8-B46AC7E95CDF-main.mp4 does not exist!
+2025-08-25 21:52:16,440 - WARNING - base image input\memories\2018-11-24_57066D6B-64C1-4472-B3DF-486A36AA624F-main.mp4 does not exist!
+2025-08-25 21:52:16,440 - WARNING - base image input\memories\2019-06-21_5f0b072f-a417-3720-831e-8ec1fc0c63d1-main.mp4 does not exist!
+2025-08-25 21:52:16,441 - WARNING - base image input\memories\2018-11-21_9DA4B177-52FE-4C11-893B-5852DC0CFCE7-main.mp4 does not exist!
+2025-08-25 21:52:16,441 - WARNING - base image input\memories\2018-01-01_E33A897F-F786-4613-A677-5DB6E0AF412B-main.mp4 does not exist!
+2025-08-25 21:52:16,442 - WARNING - base image input\memories\2018-10-14_FE03EDFB-94EA-4D68-99D0-1BB1C54A3D36-main.mp4 does not exist!
+2025-08-25 21:52:16,442 - WARNING - base image input\memories\2018-03-26_BB446CC6-ADCF-4822-987E-33E92114ED74-main.mp4 does not exist!
+2025-08-25 21:52:16,443 - WARNING - base image input\memories\2018-06-09_8639408B-F131-42DE-ADD3-CFA42AE9DCE4-main.mp4 does not exist!
+2025-08-25 21:52:16,443 - DEBUG - base image name found: input\memories\2021-05-30_3D6DCF56-C806-44E9-833D-75BBA0DDAAAF-main.mp4
+2025-08-25 21:52:16,444 - DEBUG - Overlay: input\memories\2021-05-30_3D6DCF56-C806-44E9-833D-75BBA0DDAAAF-overlay.png
+2025-08-25 21:52:16,445 - DEBUG - output file: output\2021-05-29_21_13_3D6DCF56-C806-44E9-833D-75BBA0DDAAAF.mp4
+2025-08-25 21:52:16,446 - DEBUG - Compiled ffmpeg command: ffmpeg -i input\memories\2021-05-30_3D6DCF56-C806-44E9-833D-75BBA0DDAAAF-overlay.png -i input\memories\2021-05-30_3D6DCF56-C806-44E9-833D-75BBA0DDAAAF-main.mp4 -filter_complex [0][1]scale2ref[s0][s1];[s1][s0]overlay=eof_action=repeat[s2] -map [s2] -map 1:a -metadata:g:0 creation_time=2021-05-29T21:13:19-04:00 -metadata:g:1 location=+32.4999-84.9939/ -metadata:g:2 location-eng=+32.4999-84.9939/ output\2021-05-29_21_13_3D6DCF56-C806-44E9-833D-75BBA0DDAAAF.mp4
+2025-08-25 21:52:24,475 - WARNING - base image input\memories\2019-03-15_C1CFC94A-EFDA-477B-BBE9-B4D2F2F71587-main.mp4 does not exist!
+2025-08-25 21:52:24,475 - DEBUG - base image name found: input\memories\2020-02-11_BB02DEE8-B07C-49AD-811E-5B145FF4F43A-main.mp4
+2025-08-25 21:52:24,476 - DEBUG - Overlay: input\memories\2020-02-11_BB02DEE8-B07C-49AD-811E-5B145FF4F43A-overlay.png
+2025-08-25 21:52:24,476 - DEBUG - output file: output\2020-02-10_22_15_BB02DEE8-B07C-49AD-811E-5B145FF4F43A.mp4
+2025-08-25 21:52:24,477 - DEBUG - Compiled ffmpeg command: ffmpeg -i input\memories\2020-02-11_BB02DEE8-B07C-49AD-811E-5B145FF4F43A-overlay.png -i input\memories\2020-02-11_BB02DEE8-B07C-49AD-811E-5B145FF4F43A-main.mp4 -filter_complex [0][1]scale2ref[s0][s1];[s1][s0]overlay=eof_action=repeat[s2] -map [s2] -map 1:a -metadata:g:0 creation_time=2020-02-10T22:15:06-05:00 -metadata:g:1 location=+33.9724-83.3734/ -metadata:g:2 location-eng=+33.9724-83.3734/ output\2020-02-10_22_15_BB02DEE8-B07C-49AD-811E-5B145FF4F43A.mp4
+2025-08-25 21:52:31,525 - WARNING - base image input\memories\2018-12-22_DDD72C9C-260E-45C4-9708-1BA3C8536621-main.mp4 does not exist!
+2025-08-25 21:52:31,526 - WARNING - base image input\memories\2020-03-05_5285F7E9-E0E4-40CC-A876-CD8F2E391ECE-main.mp4 does not exist!
+2025-08-25 21:52:31,527 - WARNING - base image input\memories\2018-11-22_D505094B-22CA-4E87-AAF8-1298A7BA0C4F-main.mp4 does not exist!
+2025-08-25 21:52:31,528 - WARNING - base image input\memories\2017-11-23_D330579D-A286-4592-95E9-E158FEEFA615-main.mp4 does not exist!
+2025-08-25 21:52:31,528 - WARNING - base image input\memories\2021-03-09_724E5B8F-56D0-43DD-B0B1-EC58A4ADD0E1-main.mp4 does not exist!
+2025-08-25 21:52:31,529 - WARNING - base image input\memories\2018-12-17_E05F4AFA-270E-4B61-A8ED-317DB42FEE33-main.mp4 does not exist!
+2025-08-25 21:52:31,529 - WARNING - base image input\memories\2019-05-02_30d842ce-ae8d-f9d9-b44f-d7e4f2db0ec5-main.mp4 does not exist!
+2025-08-25 21:52:31,530 - WARNING - base image input\memories\2018-04-21_E74FF6D9-94FB-40D4-BE4A-2381D08F7201-main.mp4 does not exist!
+2025-08-25 21:52:31,530 - WARNING - base image input\memories\2018-08-28_ACFF0D2B-AE08-4589-BBC0-E1BBDA9478F3-main.mp4 does not exist!
+2025-08-25 21:52:31,531 - WARNING - base image input\memories\2019-02-12_E21D6301-1437-41B2-8440-3E45D9764B9E-main.mp4 does not exist!
+2025-08-25 21:52:31,532 - WARNING - base image input\memories\2018-04-04_F1BE5862-98DD-42AF-AF8A-0F01693AAE1E-main.mp4 does not exist!
+2025-08-25 21:52:31,533 - DEBUG - base image name found: input\memories\2020-03-09_D9D7ED98-9A00-4B54-8600-0D98085D6F1C-main.mp4
+2025-08-25 21:52:31,534 - DEBUG - Overlay: input\memories\2020-03-09_D9D7ED98-9A00-4B54-8600-0D98085D6F1C-overlay.png
+2025-08-25 21:52:31,535 - DEBUG - output file: output\2020-03-09_12_42_D9D7ED98-9A00-4B54-8600-0D98085D6F1C.mp4
+2025-08-25 21:52:31,537 - DEBUG - Compiled ffmpeg command: ffmpeg -i input\memories\2020-03-09_D9D7ED98-9A00-4B54-8600-0D98085D6F1C-overlay.png -i input\memories\2020-03-09_D9D7ED98-9A00-4B54-8600-0D98085D6F1C-main.mp4 -filter_complex [0][1]scale2ref[s0][s1];[s1][s0]overlay=eof_action=repeat[s2] -map [s2] -map 1:a -metadata:g:0 creation_time=2020-03-09T12:42:46-04:00 -metadata:g:1 location=+26.0695-80.1422/ -metadata:g:2 location-eng=+26.0695-80.1422/ output\2020-03-09_12_42_D9D7ED98-9A00-4B54-8600-0D98085D6F1C.mp4
+2025-08-25 21:52:33,636 - WARNING - base image input\memories\2021-10-23_06E38BFC-0F3F-4324-B663-5BA6A8A3E4E8-main.mp4 does not exist!
+2025-08-25 21:52:33,638 - WARNING - base image input\memories\2021-04-11_1051CCB4-4433-4994-B2D9-C56E116FD844-main.mp4 does not exist!
+2025-08-25 21:52:33,639 - WARNING - base image input\memories\2021-03-19_08F0FF70-5241-4148-9D85-6C08EFD4ED86-main.mp4 does not exist!
+2025-08-25 21:52:33,640 - WARNING - base image input\memories\2017-12-23_88b58d73-b2fb-46d1-ad75-a553972fce32-main.mp4 does not exist!
+2025-08-25 21:52:33,641 - WARNING - base image input\memories\2020-02-06_E871DC88-9362-4B15-A542-1992EF11B969-main.mp4 does not exist!
+2025-08-25 21:52:33,642 - WARNING - base image input\memories\2020-11-02_9F7B826B-4662-4C46-BD9C-794B72E954B5-main.mp4 does not exist!
+2025-08-25 21:52:33,643 - WARNING - base image input\memories\2022-08-06_3ACFFA95-F378-467D-81DC-AE690E2EA190-main.mp4 does not exist!
+2025-08-25 21:52:33,644 - DEBUG - base image name found: input\memories\2021-11-14_1368ECAA-83E3-4349-95EE-94E7F18FAC78-main.mp4
+2025-08-25 21:52:33,644 - DEBUG - Overlay: input\memories\2021-11-14_1368ECAA-83E3-4349-95EE-94E7F18FAC78-overlay.png
+2025-08-25 21:52:33,647 - DEBUG - output file: output\2021-11-13_22_59_1368ECAA-83E3-4349-95EE-94E7F18FAC78.mp4
+2025-08-25 21:52:33,649 - DEBUG - Compiled ffmpeg command: ffmpeg -i input\memories\2021-11-14_1368ECAA-83E3-4349-95EE-94E7F18FAC78-overlay.png -i input\memories\2021-11-14_1368ECAA-83E3-4349-95EE-94E7F18FAC78-main.mp4 -filter_complex [0][1]scale2ref[s0][s1];[s1][s0]overlay=eof_action=repeat[s2] -map [s2] -map 1:a -metadata:g:0 creation_time=2021-11-13T22:59:51-05:00 -metadata:g:1 location=+35.7809-78.6478/ -metadata:g:2 location-eng=+35.7809-78.6478/ output\2021-11-13_22_59_1368ECAA-83E3-4349-95EE-94E7F18FAC78.mp4
+2025-08-25 21:52:36,785 - ERROR - ffmpeg error converting 2021-11-14_1368ECAA-83E3-4349-95EE-94E7F18FAC78-main.mp4 with overlay 2021-11-14_1368ECAA-83E3-4349-95EE-94E7F18FAC78-overlay.png: err=Error('ffmpeg error (see stderr output for detail)')

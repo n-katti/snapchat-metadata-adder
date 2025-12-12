@@ -46,20 +46,23 @@ def make_local_metadata(m: Metadata, tz: tzinfo = None) -> Metadata:
     local_date = None
 
     # If a timezone is explicitly given, use it
-    if tz is not None:
-        local_date = m.date.astimezone(tz)
-    else:
+    # if tz is not None:
+    #     local_date = m.date.astimezone(tz)
+    # else:
         # Try to determine timezone from lat/lon
-        tz_name = tf.timezone_at(lat=m.location.latitude, lng=m.location.longitude)
-        if tz_name:
-            local_tz = pytz.timezone(tz_name)
-            local_date = m.date.astimezone(local_tz)
-        else:
-            # fallback: system local timezone
-            local_date = m.date.astimezone()
-            logger.warning(
-                f"No timezone found for lat={m.location.latitude}, lon={m.location.longitude}. "
-                f"Falling back to system local timezone."
-            )
-
+    tz_name = tf.timezone_at(lat=m.location.latitude, lng=m.location.longitude)
+    if tz_name:
+        local_tz = pytz.timezone(tz_name)
+        local_date = m.date.astimezone(local_tz)
+    else:
+        # fallback: system local timezone
+        local_date = m.date.astimezone()
+        logger.warning(
+            f"No timezone found for lat={m.location.latitude}, lon={m.location.longitude}. "
+            f"Falling back to system local timezone."
+        )
+    print(f"Resolved tz_name: {tz_name}")
+    print(f"UTC datetime: {m.date}")
+    print(f"Local datetime: {local_date}")
+    print(f"Filename stamp: {local_date.strftime('%Y-%m-%d_%H_%M')}")
     return Metadata(local_date, m.type, m.location, m.mid)
