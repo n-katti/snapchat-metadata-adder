@@ -61,6 +61,8 @@
   - `02. Merged Videos/No Overlay Videos Merged`
   - `02. Merged Videos/Overlay Videos Merged`
   - `02. Merged Videos/Overlay Videos Without Overlays Merged`
+- NOTE:
+  - In order to run this, you need Exiftools downloaded and added to your PATH variable
 
 ## Move Non-Merged Videos
 - Run `move nonmerged videos.py` on:
@@ -98,3 +100,9 @@
   - Reconciled No Overlay Videos
   - Reconciled Overlay Pictures
   - Reconciled Overlay Videos
+
+
+# Final Notes
+- The first time I went through the merge process, the files were outputted without metadata
+- I didn't notice until after I went through and kept/deleted the files I wanted/didn't want
+- So after I added metadata back into `merge video candidates.py`, instead of rerunnning the merge on EVERY video, I just reran it on the files that I had kept and not deleted. This was done with `merge videos only in the final output folder.py` which goes through final output folders, gets all kept merged videos, and only processes these when going through `merge_candidates.json`
